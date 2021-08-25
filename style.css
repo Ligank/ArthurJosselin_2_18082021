@@ -1,0 +1,272 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;   
+}
+
+#bloc_page
+{
+    max-width: 1280px ;
+    margin: auto;
+}
+
+
+/* Header */
+
+#Bloc_haut
+{
+    display: flex;
+}
+
+#Image_logo
+{
+    width: 7em;
+    min-width: 7em;
+    height: auto;
+    
+}
+
+nav
+{
+    font-size: 1.1em;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.3em;
+    padding-right: 2em;
+    flex-wrap: wrap;
+    margin-top: -10px;
+}
+
+.Element:nth-child(1)
+{
+    flex: 3;
+}
+.Element:nth-child(2)
+{
+    flex: 1;
+}
+
+#Nav_sinscrire
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0065FC;
+    padding-top: 0.54em;
+}
+
+
+.Navigation:hover
+{
+    color: #0065FC;
+    border-top: 4px #0065FC solid;
+}
+
+.Navigation
+{
+    margin-top: -23px;
+    padding-top: 2em;
+}
+
+#Titre_et_sous_titre
+{
+ padding-left: 2.5em;
+}
+
+#Titre
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+#Sous-titre
+{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+    /* Barre de recherche */
+
+#Iconmap
+{
+    background-color:#F2F2F2;
+    width: 52px;
+    height: 51px;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    margin-left: 2.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Map
+{
+    height: 52px;
+    line-height: 51px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+input
+   {
+      border: 0px;
+   }
+
+#Recherche
+{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 1.5em;
+    margin-left: -0.1em;
+}
+
+#Form
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#Barre
+{
+    height: 51px;
+    width: 234px;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-left: 17px;
+    border: 1px rgb(233, 231, 231) solid;
+}
+
+#Bouton
+{
+    background-color:#0065FC ;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    height: 51px;
+    width: 134px;
+    cursor: pointer ;
+    border: 0px;
+}
+
+
+.Bouton2
+{
+    background-color:#0065FC ;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 20%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer ;
+    border: 0px;
+}
+
+::placeholder
+{
+    color: black;
+}
+
+
+/* Filtres */
+
+#Cases_filtres
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Filtres
+{
+    display: flex;
+    margin-top: 2em;
+    margin-left: 2.7em;
+    flex-wrap: wrap;
+}
+
+#Titre_filtres
+{
+    height: 52px;
+    line-height: 52px;
+    vertical-align: middle;
+}
+
+.Filtres
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    border: 2px #F2F2F2 solid;
+    border-radius: 50px;
+    white-space: nowrap;
+    max-height: 50px;
+    
+}
+
+.Noms_filtres
+{
+    padding-left: 13px;
+    padding-right: 22px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+
+}
+
+.Cercle_filtres
+{
+    background-color:#DEEBFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Icon_filtres
+{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+/* Icônes */
+
+.Black
+{
+    color: black;
+}
+
+.Bleu
+{
+   color: #0065FC; 
+}
+
+.Gris
+{
+    color: #F2F2F2;
+}
+
+
+
+
+
+/* Sections */
+
+bold
+{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
