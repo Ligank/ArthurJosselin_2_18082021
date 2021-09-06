@@ -13,7 +13,7 @@
     </head>
 
     <body>
-        <div id="bloc_page">
+        <div id="Bloc_page">
             
             <!-- Haut de page -->
             <header>
@@ -25,18 +25,18 @@
                             <img src="images/Reservia@3x.png" alt="Logo Reservia" id="Image_logo">
                         </figure>
                         
-                        <nav id="Navigation_et_inscrire">
-                            <ul id="Navigation" class="Element">                      
+                        <nav class="Element">
+                            <ul id="Navigation">                      
                                 <li id="Nav_Hebergements" class="Navigation"><a href="#Hebergements">Hébergements</a></li>
                                 <li id="Nav_Activites" class="Navigation"><a href="#Activites">Activités</a></li>
                             </ul>
-        
-                            <div id="Nav_sinscrire" class="Element">
-                                <a href="">S'inscrire</a>
-                            </div>
                         </nav>
-                        
 
+                        <div id="Nav_sinscrire" class="Element">
+                            <a href="">S'inscrire</a>
+                        </div>
+                            
+                        
                 </div>   
                     
                 
@@ -54,21 +54,18 @@
                     <div id="Iconmap">
                         <i class="fas fa-map-marker-alt Black Map"></i>
                     </div>
-                    
-                    <div id="Barre_recherche">
-                        <form method="POST" action="" id="Form">
-                            <input type="search" name="Recherche" placeholder="Marseille, France" id="Barre"/>
+                    <form method="POST" action="" id="Form">
+                        <input type="search" name="Recherche" placeholder="Marseille, France" id="Barre"/>
                             
-                            <div id="Bouton_bloc1">
+                         <div id="Bouton_bloc1">
                                 <input type="submit" value="Rechercher" id="Bouton"/>
-                            </div>
+                         </div>
 
-                            <div id="Bouton_bloc2">
+                        <div id="Bouton_bloc2">
                                 <button type="submit" class="fas fa-search Bouton2"></button>
-                            </div>
+                         </div>
                             
-                        </form>
-                    </div>
+                    </form>
                 </div> 
 
                 <!-- Filtres -->
@@ -266,13 +263,13 @@
 
             <section id="Activites">
                 
-                <h2>Activités à Marseille</h2>
+                <h2 id="Titre_activites">Activités à Marseille</h2>
 
                 <div id="Images_activites">
                     
                     <a href="" class="Lien_activites">
-                        <figure id="Vieux_port" class="Activites_grand Activites">
-                            <img src="Images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="Image_activites_grand">
+                        <figure id="Vieux_port" class="Activites_grand">
+                            <img src="Images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" id="Image_port" class="Image_activites_grand Image_activites">
                             <figcaption>
                                 <h3>Vieux Port</h3>
                             </figcaption>                         
@@ -281,8 +278,8 @@
 
                     <div id="Fort_et_iles">
                         <a href="" class="Lien_activites">
-                            <figure id="Fort_de_pomegues" class="Activites">
-                                <img src="Images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" id="Image_fort">
+                            <figure id="Fort_de_pomegues" class="Activites_fort">
+                                <img src="Images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" id="Image_fort" class="Image_activites">
                                 <figcaption>
                                     <h3>Fort de Pomègues</h3>
                                 </figcaption>                         
@@ -290,8 +287,8 @@
                         </a>
     
                         <a href="" class="Lien_activites">
-                            <figure id="Îles_du_frioul" class="Activites">
-                                <img src="Images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" id="Image_ile">
+                            <figure id="Îles_du_frioul" class="Activites_fort">
+                                <img src="Images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" id="Image_ile" class="Image_activites">
                                 <figcaption>
                                     <h3>Îles du Frioul</h3>
                                 </figcaption>                         
@@ -301,8 +298,8 @@
 
                       
                     <a href="" class="Lien_activites">
-                        <figure id="Parc_national" class="Activites_grand Activites ">
-                            <img src="Images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="Image_activites_grand">
+                        <figure id="Parc_national" class="Activites_grand">
+                            <img src="Images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" id="Image_parc_national" class="Image_activites_grand Image_activites">
                             <figcaption>
                                 <h3>Parc National des Calanques</h3>
                             </figcaption>                         
@@ -312,7 +309,7 @@
                     <div id="Notre_dame_et_parc">
                         <a href="" class="Lien_activites">
                             <figure id="Notre_dame" class="Activites">
-                                <img src="Images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" id="Image_dame">
+                                <img src="Images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" id="Image_dame" class="Image_activites">
                                 <figcaption>
                                     <h3>Notre-Dame-de-la-Garde</h3>
                                 </figcaption>                         
@@ -321,7 +318,7 @@
     
                         <a href="" class="Lien_activites">
                             <figure id="Parc_longchamp" class="Activites" >
-                                <img src="Images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" id="Image_parc">
+                                <img src="Images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" id="Image_parc" class="Image_activites">
                                 <figcaption>
                                     <h3>Parc Longchamp</h3>
                                 </figcaption>                         
@@ -340,9 +337,9 @@
                 <div id="Bas_de_page">
                     <div id="A_propos" class="Bas">
                         <b class="Nom_bas">A propos</b>
-                        <a href="">Fonctionnement du site</a>
-                        <a href="">Conditions générales de vente</a>
-                        <a href="">Données et confidentialité</a>
+                        <a href="" class="A_propos">Fonctionnement du site</a>
+                        <a href="" class="A_propos">Conditions générales de vente</a>
+                        <a href="" class="A_propos">Données et confidentialité</a>
                     </div>
     
                     <div id="Nos_hebergements" class="Bas">

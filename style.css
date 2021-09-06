@@ -12,10 +12,10 @@ body
 
 a {
     text-decoration: none;
-    color: currentColor;   
+    color: currentColor;
 }
 
-#bloc_page
+#Bloc_page
 {
     max-width: 1340px ;
     margin: auto;
@@ -39,45 +39,28 @@ header, #Bloc_haut, #Navigation_et_inscrire, #Navigation, nav
 header
 {
     flex-direction: column;
+}
+
+#Logo
+{
+    flex: 1;
     margin-left: 1em;
 }
 
 #Bloc_haut
 {
-    flex-wrap: wrap;
-    margin-top: 1em;
-    margin-right: 1em;
-}
-
-#Navigation_et_inscrire
-{
-    flex-wrap: wrap-reverse;
-}
-
-.Element:nth-child(1)
-{
-    flex: 2;
-}
-.Element:nth-child(2)
-{
-    flex: 1;
-}
-.Element:nth-child(2)
-{
-    flex: 1;
-}
-
-.Element
-{
-    margin: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
 }
 
 #Image_logo
 {
     width: 7em;
-    min-width: 7em;
     height: auto;
 }
+
 
 #Navigation
 {
@@ -86,12 +69,6 @@ header
     justify-content: space-around;
     padding-right: 1em;
     list-style:none;
-}
-
-nav
-{
-    min-width: 375px;
-    justify-content: space-around;
     flex-wrap: nowrap;
 }
 
@@ -104,21 +81,19 @@ nav
 .Navigation:hover
 {
     color: #0065FC;
-    border-top: 6px #0065FC solid;
+    border-top: 2px #0065FC solid;
 }
 
 .Navigation
 {
-    padding-top: 2em;
-    margin-top: -2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-right: 1em;
+    padding: 2em 1em 0em 1em ;
+    margin: -2em 1em 0em 0em;
 }
 
 #Titre_et_sous_titre
 {
- padding-top: 50px;
+ padding-top: 30px;
+ margin-left: 1em;
 }
 
 #Titre
@@ -134,7 +109,7 @@ nav
     font-weight: 400;
 }
 
-    /* Barre de recherche */
+/* Barre de recherche */
 
 #Iconmap, #Recherche, #Form
 {
@@ -147,8 +122,6 @@ nav
     background-color:#F2F2F2;
     width: 52px;
     height: 51px;
-    min-width: 52px;
-    min-height: 51px;
     border-top-left-radius: 15px ;
     border-bottom-left-radius: 15px ;
     flex-direction: column;
@@ -165,7 +138,7 @@ input
 #Recherche
 {
     margin-top: 1.5em;
-    margin-left: -0.1em;
+    margin-left: 1em;
 }
 
 #Barre
@@ -199,8 +172,8 @@ input
 .Bouton2
 {
     border-radius: 15px;
-    height: 50px;
-    width: 50px;
+    height: 51px;
+    width: 51px;
 }
 
 #Bouton_bloc2
@@ -225,6 +198,7 @@ input
     flex-wrap: wrap;
     font-size: 1.2em;
     margin-top: 18px;
+    margin-left: 1em;
 }
 
 #Cases_filtres
@@ -257,6 +231,7 @@ input
     color: white;
     background-color: #0065FC;
     border: 2px #0065FC solid;
+    transform: scale(1.05);
 }
 
 .Noms_filtres
@@ -293,8 +268,7 @@ input
 #Informations
 {
     justify-content: left;
-    margin-top: 1.8em;
-    margin-bottom: 1.8em;
+    margin: 1.8em 0 1.8em 1em;
 }
 
 #I
@@ -334,7 +308,6 @@ input
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     align-items: flex-end;
-    margin-left: 1em;
 }
 
 h2
@@ -355,6 +328,7 @@ h3
     font-size: 0.8em;
     padding-left: 17px;
     padding-bottom: 11px;
+    
 }
 
 .Etablissement:hover, .Etablissement_populaire:hover, .Activites:hover
@@ -378,6 +352,7 @@ h3
     max-width: 880px;
     min-height: 625px;
     margin-bottom: 50px;
+    margin-left: 1em;
 }
 
 #Titre_hebergement
@@ -413,7 +388,7 @@ h3
 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    width: 236px;
+    width: calc(100% - 10px);
     height: 114px;
     margin: 5px 5px 0px 5px;
     object-fit: cover ;
@@ -446,8 +421,9 @@ h3
     width: 420px;
     height: 625px;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    margin-left: 1em;
 }
 
 #Titre_populaire
@@ -491,10 +467,8 @@ h3
 {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    max-width: 127px;
-    max-height: 134px;
-    min-width: 127px;
-    min-height: 134px;
+    width: 127px;
+    height: 134px;
     margin: 5px 0px 5px 5px;
     object-fit: cover;
 }
@@ -523,7 +497,7 @@ h3
 {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0.1px 0.1px 4px rgb(155, 154, 154);
+    box-shadow: 0px 0px 4px rgb(155, 154, 154);
     padding-bottom: 12px;
 }
 
@@ -541,8 +515,8 @@ h3
 
 .Activites_grand
 {
-    max-height: 446px;
-    max-width: 305px;
+    height: 446px;
+    width: 305px;
 }
 
 .Image_activites_grand
@@ -553,8 +527,8 @@ h3
 
 #Fort_de_pomegues
 {
-    max-height: 237px;
-    max-width: 305px;
+    height: 237px;
+    width: 305px;
 }
 
 #Image_fort
@@ -565,8 +539,8 @@ h3
 
 #Îles_du_frioul
 {
-    max-height: 164px;
-    max-width: 305px;
+    height: 164px;
+    width: 305px;
 }
 
 #Image_ile
@@ -577,8 +551,8 @@ h3
 
 #Notre_dame
 {
-    max-height: 194px;
-    max-width: 305px;
+    height: 194px;
+    width: 305px;
 }
 
 #Image_dame
@@ -589,8 +563,8 @@ h3
 
 #Parc_longchamp
 {
-    max-height: 210px;
-    max-width: 305px;
+    height: 210px;
+    width: 305px;
 }
 
 #Image_parc
@@ -606,7 +580,7 @@ h3
 
 /*Footer*/
 
-footer, #Bas_de_page, .Bas
+footer, #Bas_de_page
 {
     display: flex;
     flex-wrap: wrap;
@@ -620,6 +594,7 @@ footer
 
 .Bas
 {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 50px;
@@ -646,4 +621,204 @@ footer
 .Nom_bas
 {
     font-size: 1.1em;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 480px)
+{
+
+    #Logements_populaires, .Etablissement_populaire, #Logements, .Etablissement, #Bas_de_page, nav, #Navigation, #Barre, #Hebergements_et_populaire, #Populaires, #Hebergement, #Activites, #Fort_et_iles, #Notre_dame_et_parc, #Images_activites, #Vieux_port, #Fort_de_pomegues, #Îles_du_frioul, #Parc_national, #Notre_dame, #Parc_longchamp, #Image_port, #Image_fort, #Image_ile, #Image_parc_national, #Image_dame, #Image_parc
+    {
+        width: 100%;
+    }
+
+    #Hebergements_et_populaire, #Populaires, .Lien_populaires, .Image_hebergements_populaire, .Lien_logements
+    {
+        height: auto;
+    }
+
+    /*Haut*/
+
+    #Logo, #Titre_et_sous_titre
+    {
+        margin-left: 1em;
+    }
+
+    #Nav_sinscrire
+    {
+        margin-right: 1em;
+    }
+
+
+    #Bloc_haut
+    {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Element:nth-child(1)
+    {
+        order: 1;
+    }
+    
+    .Element:nth-child(2)
+    {
+        order: 3;
+    }
+
+    .Element:nth-child(3)
+    {
+        order: 2;
+    }
+
+    nav
+    {
+        margin-top: 20px;
+    }
+
+    #Navigation
+    {
+        padding: 0;
+    }
+
+    .Navigation
+    {
+        padding: 0 0 10px 0 ;
+        text-align: center;
+        margin: 0;
+        border-bottom: 2px #F2F2F2 solid;
+        width: 50%;
+        
+    }
+
+    .Navigation:hover
+    {
+        color: #0065FC;
+        border-top: 0px;
+        border-bottom: 2px #0065FC solid;
+    }
+
+    /*Recherche*/
+
+    #Recherche
+    {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    #Form
+    {
+        width: 80%;
+    }
+
+    #Barre
+    {
+        min-width: 180px;
+    }
+
+    #Bouton_bloc1
+    {
+        display: none;
+    }
+
+    #Bouton_bloc2
+    {
+        display: initial;
+        margin-left: -10px;
+    }
+
+    /*Filtres*/
+
+    #Cases_filtres
+    {
+        margin-left: -1.2em;
+    }
+
+    /*Populaire*/
+
+    #Populaires
+    {
+        margin-left: 0em;
+        border-radius: 0%;
+    }
+
+    #Titre_populaire
+    {
+        margin-top: 1.5em;
+    }
+
+    .Lien_populaires
+    {
+        width: 85%;
+    }
+
+    .Image_hebergements_populaire
+    {
+        width: 35%;
+    }
+
+    /*Hébergements*/
+
+    #Hebergement
+    {
+        background-color: rgb(255, 255, 255);
+        border-radius: 0%;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    .Lien_logements
+    {
+        width: 85%;
+        margin-bottom: -0.1em;
+    }
+
+    /*Activités*/
+
+    #Activites
+    {
+        margin-left: 0;
+    }
+
+    #Fort_et_iles, #Notre_dame_et_parc, #Images_activites
+    {
+        justify-content: center;
+    }
+
+    #Fort_et_iles, #Notre_dame_et_parc
+    {
+        align-items: center;
+    }
+
+    .Lien_activites
+    {
+        width: 85%;
+        max-height: 190px;
+        margin-bottom: 1em;
+    }
+
+    #Vieux_port, #Fort_de_pomegues, #Îles_du_frioul, #Parc_national, #Notre_dame, #Parc_longchamp
+    {
+        height: 100%;
+    }
+    
+    #Image_port, #Image_fort, #Image_ile, #Image_parc_national, #Image_dame, #Image_parc
+    {
+        height: 75%;
+    }
+
+    #Titre_activites
+    {
+        margin-left: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 768px)
+{
+
 }
