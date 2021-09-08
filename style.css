@@ -67,7 +67,6 @@ header
     font-size: 1.1em;
     font-weight: 500;
     justify-content: space-around;
-    padding-right: 1em;
     list-style:none;
     flex-wrap: nowrap;
 }
@@ -590,6 +589,14 @@ footer
 {
     background-color: #F2F2F2;
     margin-top: 60px;
+    width: 100%;
+}
+
+#Bas_de_page
+{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
 }
 
 .Bas
@@ -599,8 +606,6 @@ footer
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 40px;
-    padding-right: 177px;
-    padding-left: 51px;
 }
 
 #A_propos
@@ -629,10 +634,12 @@ footer
 @media screen and (max-width: 550px)
 {
 
+
     #Logements_populaires, .Etablissement_populaire, #Logements, .Etablissement, #Bas_de_page, nav, #Navigation, #Barre, #Hebergements_et_populaire, #Populaires, #Hebergement, #Activites, #Fort_et_iles, #Notre_dame_et_parc, #Images_activites, #Vieux_port, #Fort_de_pomegues, #Îles_du_frioul, #Parc_national, #Notre_dame, #Parc_longchamp, #Image_port, #Image_fort, #Image_ile, #Image_parc_national, #Image_dame, #Image_parc
     {
         width: 100%;
     }
+
 
     #Hebergements_et_populaire, #Populaires, .Lien_populaires, .Image_hebergements_populaire, .Lien_logements
     {
@@ -644,11 +651,6 @@ footer
     #Logo, #Titre_et_sous_titre
     {
         margin-left: 1em;
-    }
-
-    #Nav_sinscrire
-    {
-        margin-right: 1em;
     }
 
 
@@ -717,7 +719,7 @@ footer
 
     #Barre
     {
-        min-width: 180px;
+        min-width: 100px;
     }
 
     #Bouton_bloc1
@@ -743,12 +745,15 @@ footer
     #Populaires
     {
         margin: 0;
+        width: 100%;
         border-radius: 0%;
+        padding: 0;
     }
 
     #Titre_populaire
     {
         margin-top: 1.5em;
+        margin-bottom: 20px;
         width: 85%;
         justify-content: space-around;
         align-self: center;
@@ -757,6 +762,8 @@ footer
     .Lien_populaires
     {
         width: 85%;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     .Image_hebergements_populaire
@@ -764,10 +771,6 @@ footer
         width: 35%;
     }
 
-    #Logements_populaires
-    {
-        margin-left: 0.4em;
-    }
 
     /*Hébergements*/
 
@@ -824,10 +827,18 @@ footer
         margin-left: 1.5em;
     }
 
+    /*Bas*/
+
+    #Bas_de_page
+    {
+        flex-direction: column;
+        margin-left: 2em;
+    }
+
 }
 
 
-@media screen and (max-width: 768px) and (min-width: 551px)
+@media screen and (min-width: 551px) and (max-width: 768px)
 {
     #Hebergements_et_populaire
     {
@@ -925,7 +936,7 @@ footer
 
 }
 
-@media screen and (max-width: 1340px) and (min-width: 769px)
+@media screen and (min-width: 769px) and (max-width: 1340px)
 {
 
     #Populaires
