@@ -17,7 +17,7 @@ a {
 
 #Bloc_page
 {
-    max-width: 1340px ;
+    max-width: 1340px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,6 @@ header
     width: 7em;
     height: auto;
 }
-
 
 #Navigation
 {
@@ -625,18 +624,15 @@ footer
     font-size: 1.1em;
 }
 
-
-/*Media Queries*/
+/*Media Queries Portable*/
 
 @media screen and (max-width: 550px)
 {
-
 
     #Logements_populaires, .Etablissement_populaire, #Logements, .Etablissement, #Bas_de_page, nav, #Navigation, #Barre, #Hebergements_et_populaire, #Populaires, #Hebergement, #Activites, #Fort_et_iles, #Notre_dame_et_parc, #Images_activites, #Vieux_port, #Fort_de_pomegues, #Îles_du_frioul, #Parc_national, #Notre_dame, #Parc_longchamp, #Image_port, #Image_fort, #Image_ile, #Image_parc_national, #Image_dame, #Image_parc
     {
         width: 100%;
     }
-
 
     #Hebergements_et_populaire, #Populaires, .Lien_populaires, .Image_hebergements_populaire, .Lien_logements
     {
@@ -649,7 +645,6 @@ footer
     {
         margin-left: 1em;
     }
-
 
     #Bloc_haut
     {
@@ -767,7 +762,6 @@ footer
         width: 35%;
     }
 
-
     /*Hébergements*/
 
     #Hebergement
@@ -830,9 +824,9 @@ footer
         flex-direction: column;
         margin-left: 2em;
     }
-
 }
 
+/*Media Queries Tablette*/
 
 @media screen and (min-width: 551px) and (max-width: 768px)
 {
@@ -927,9 +921,9 @@ footer
     {
         width: 100%;
     }
-
-
 }
+
+/*Media Queries Grande tablette*/
 
 @media screen and (min-width: 769px) and (max-width: 1340px)
 {
@@ -992,7 +986,4 @@ footer
         max-width: 1200px;
         width: 100%;
     }
-
-
-    
 }
